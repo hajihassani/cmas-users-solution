@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: UserManagementApplication
+  datasource:
+    url: jdbc:postgresql://localhost:5432/cmas-users
+    username: cmas
+    password: 123456
+    hikari:
+      maximum-pool-size: 10
+  jpa:
+    hibernate:
+      ddl-auto: validate
+
+server:
+  port: 8080
